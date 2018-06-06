@@ -1,0 +1,7 @@
+<button (click)="addNews()">Add news</button>
+<button (click)="getNews()">Get news</button>
+
+<div *ngFor="let item of news | async">
+  {{item.title}}
+</div>
+
